@@ -7,7 +7,7 @@ typedef int telem;
 telem** create_arr(int m, int n) {
 	telem** arr = (telem**)malloc(m * sizeof(telem*));
 	for (int i = 0; i < m; i++)
-		arr[i] = (telem*)calloc(n * sizeof(telem), sizeof(telem));
+		arr[i] = (telem*)calloc(n, sizeof(telem));
 	return arr;
 }
 
